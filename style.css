@@ -1,0 +1,268 @@
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Nunito;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3r;
+  grid-template-areas: "container card";
+}
+
+h1 {
+  position: relative;
+  left: 111px;
+  top: 160px;
+  width: 338px;
+  height: 130px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 69px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400
+}
+
+button {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+fieldset {
+  border: none;
+}
+
+.container {
+  grid-area: container;
+  display: grid;
+  justify-content: center;
+  margin: 96px 24px 96px 24px;
+  background-color: white;
+  grid-template-columns: 320px 320px;
+  grid-template-areas: 
+  "header header card"
+  "info-name info-name card"
+  "info-mail info-password card"
+  "age age card"
+  "about about card"
+  "country country card"
+  "equipment equipment card"
+  "reset submit card";
+}
+
+.header {
+  grid-area: header;
+  
+}
+
+.info-name {
+  grid-area: info-name;
+}
+
+.info-mail {
+  grid-area: info-mail;
+
+}
+
+.info-password {
+  grid-area: info-password;  
+}
+
+.age {
+  grid-area: age;
+}
+
+.about {
+  grid-area: about;
+}
+
+.country {
+  grid-area: country;
+}
+
+.equipment {
+  grid-area: equipment;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.submit {
+  grid-area: submit;
+}
+
+.card {
+  grid-area: card;
+  background: url("assets/ski.jpeg") no-repeat;
+  background-size: cover;
+  background-position: -1080px;
+}
+
+
+#name {
+  width: 620px;
+  height: 51px;
+  background: #E2E5ED;
+  border-radius: 8px;
+  border: 1px solid #3E416D;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+#mail-box {
+  width: 301px;
+  height: 51px;
+  background: #E2E5ED;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+#password-box {
+  width: 301px;
+  height: 51px;
+  background: #E2E5ED;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 25px;;
+}
+
+.age {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#biography {
+  width: 620px;
+  height: 105px;
+  background: #E2E5ED;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+#location {
+  width: 620px;
+  height: 51px;
+  background: #E2E5ED;
+  border: none;
+  border-radius: 8px;
+
+}
+
+.equipment {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.btn-reset {
+  width: 300px;
+  height: 51px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.btn-submit {
+  width: 300px;
+  height: 51px;
+  background: #149770;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+/*input*/
+input {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 3px solid #36b5cf;
+}
+
+#name:valid, #mail-box:valid, #password-box:valid {
+  border: 2px solid green;
+}
+
+#name + span {
+  position: absolute;
+}
+
+#name + span::before {
+  position: absolute;
+  left: -620px;
+  top: 51px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+#name:invalid + span::before {
+  content: 'this field is required';
+  color: red;
+}
+
+#mail-box + span {
+  position: absolute;
+}
+
+#mail-box + span::before {
+  position: absolute;
+  left: -301px;
+  top: 51px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+#mail-box:invalid + span::before {
+  content: 'this field is required';
+  color: red;
+}
+
+#password-box + span {
+  position: absolute;
+}
+
+#password-box + span::before {
+  position: absolute;
+  left: -301px;
+  top: 51px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+#password-box:invalid + span::before {
+  content: 'this field is required';
+  color: red;
+}
+
+label {
+  display:inline-block;
+}
+

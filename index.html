@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The ultimate ski adventure</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    label {
+      cursor: default;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start here -->
+  <div class="container">
+    <form action="#" method="get">
+      <fieldset class="basic-info">
+        <header class="header">
+          <h2>Register for the ultimative ski adventure</h2>
+        </header>
+        <p>Your basic info</p>
+        <div class="info-name">
+          <label for="name">Name and Surname *</label><br>
+          <input type="text" id="name" name="name" required>
+          <span></span>
+          <br>
+        </div>
+        <div class="info-mail">
+          <label for="mail-box">Email *</label><br>
+          <input type="email" id="mail-box" name="mail-box" placeholder=" example@mail.com" required>
+          <span></span>
+        </div>
+        <br>
+        <div class="info-password">
+          <label for="password-box">Password *</label><br>
+          <input type="password" id="password-box" name="password-box" placeholder=" ****" required>
+          <span></span>
+        </div>
+        <div class="age">
+          <p>Age</p>
+          <input type="radio" id="under-18" name="age" value="under">
+          <label for="under-18">&ensp; Under 18</label><br>
+          <input type="radio" id="over-18" name="age" value="above">
+          <label for="over-18">&ensp; 18 and over</label><br>
+        </div>
+        <div class="about">
+          <h3>Tell us about yourself</h3><br>
+          <label for="biography">Your biography</label><br>
+          <input type="text" id="biography" name="biography"><br><br>
+        </div>
+        <div class="country">
+          <label for="location">Select location</label></label><br>
+          <input type="text" id="location" name="location" placeholder=" Mayrhofen">
+        </div>
+        <div class="equipment">
+          <p>What equipment would you like to rent?</p>
+          <input type="checkbox" id="skis" name="skis">
+          <label for="skis">&ensp; Skis</label><br>
+          <input type="checkbox" id="helmet" name="helmet">
+          <label for="helmet">&ensp; Helmet</label><br>
+          <input type="checkbox" id="goggles" name="goggles">
+          <label for="goggles">&ensp; Goggles</label><br>
+          <input type="checkbox" id="boots" name="boots">
+          <label for="boots">&ensp; Ski boots</label><br>
+          <input type="checkbox" id="poles" name="poles">
+          <label for="poles">&ensp; Ski poles</label><br>
+        </div>
+
+        <div class="buttons">
+          <button type="reset" class="btn-reset">Reset</button>
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </fieldset>
+  </div>
+  </form>
+  <div class="card">
+    <h1>Epic experience in the snow</h1>
+  </div>
+</body>
+
+</html>
